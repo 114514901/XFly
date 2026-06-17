@@ -1,0 +1,22 @@
+name: XFly
+version: '1.0.0'
+main: com.xfly.XFly
+api-version: '1.21'
+authors: ['XFly Development']
+description: '消耗货币飞行系统 - 通过 Vault 经济实现按分钟扣费的飞行插件'
+depend: ['Vault']
+softdepend: ['PlaceholderAPI']
+commands:
+    xfly:
+        description: '切换飞行模式 / 打开GUI / 重载配置'
+        aliases: ['f', 'fly']
+permissions:
+    xfly.use:
+        description: '允许使用飞行功能'
+        default: true
+    xfly.bypass:
+        description: '绕过消耗，无限飞行'
+        default: op
+    xfly.reload:
+        description: '重载配置文件'
+        default: op

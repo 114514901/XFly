@@ -1,0 +1,33 @@
+# XFly 消耗飞行系统 配置文件
+# ScriptIrc-config-version: 1 — 请勿删除此行，用于配置版本检测
+
+# 每分钟消耗的货币数量
+price-per-minute: 1.0
+
+# 货币名称（显示用）
+currency-name: "货币"
+
+# 余额不足警告时间（秒），之后自动关闭飞行
+warning-seconds: 10
+
+# 悬停冻结计费时间（秒）
+# 玩家在空中不动超过此时间后暂停计费，移动后恢复
+hover-freeze-seconds: 300
+
+# ===== 消息配置 =====
+# 支持 & 颜色代码
+
+# 开启飞行时的提示
+fly-on-message: "&a已开启飞行，每分钟消耗 %price% %currency%"
+
+# 关闭飞行时的提示
+fly-off-message: "&e飞行已关闭"
+
+# 余额不足时的提示（警告结束后）
+no-money-message: "&c余额不足，飞行已自动关闭"
+
+# 余额不足警告提示（%seconds% 为剩余秒数）
+warning-message: "&c⚠ 余额不足！将在 %seconds% 秒后自动关闭飞行"
+
+# 无权限提示
+no-permission-message: "&c你没有权限使用此命令"
